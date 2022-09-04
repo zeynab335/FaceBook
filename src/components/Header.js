@@ -57,7 +57,7 @@ const Header = () => {
       {/* Header right */}
       <div className="header__right">
         <div className="header__info">
-          <Avatar />
+          <Avatar src="https://res.cloudinary.com/dnvinlruh/image/upload/v1662204970/cld-sample.jpg" />
           <h4> ZEZE </h4>
         </div>
         {HeaderBtnIcons.map((icon) => (
