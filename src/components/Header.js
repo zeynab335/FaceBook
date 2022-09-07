@@ -45,6 +45,7 @@ const Header = () => {
       <div className="header__middle">
         {HeaderIcons.map((icon, index) => (
           <div
+            key={index}
             className={`header__option ${
               index === 0 ? "header__option--active" : ""
             }`}
@@ -58,10 +59,10 @@ const Header = () => {
       <div className="header__right">
         <div className="header__info">
           <Avatar src="https://res.cloudinary.com/dnvinlruh/image/upload/v1662204970/cld-sample.jpg" />
-          <h4> ZEZE </h4>
+          <h4> Zeze Mahmoud </h4>
         </div>
-        {HeaderBtnIcons.map((icon) => (
-          <IconButton> {icon} </IconButton>
+        {HeaderBtnIcons.map((icon, index) => (
+          <IconButton key={index}> {icon} </IconButton>
         ))}
       </div>
     </div>
